@@ -1,0 +1,25 @@
+package section3;
+
+public class OperatorChallenge {
+	
+	public static void main(String[] args) {
+			
+	double firstNum = 20.00;
+	double secondNum = 80.00;
+	
+	double total = (firstNum + secondNum) * 100;
+	
+	double remainder = total / 40.00;
+	
+	boolean isRemainderZero = (total % 40.00 == 0) ? true : false;
+	
+	System.out.println(isRemainderZero);
+	
+	if (!isRemainderZero) {
+		System.out.println("Got some remainder.");
+	}
+	
+	}
+	
+
+}

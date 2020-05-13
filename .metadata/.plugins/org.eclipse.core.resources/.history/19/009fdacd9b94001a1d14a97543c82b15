@@ -1,0 +1,17 @@
+package section3;
+
+public class RecapAndStrings {
+	
+	public static void main(String[] args) {
+		
+		// 8 primitive data types:
+		// byte, short, int, long, float, double, char, boolean
+		
+		String str = "This is a string,";
+		System.out.println(str);
+		str = str + "and this is more";
+		System.out.println(str);
+		
+	}
+
+}
