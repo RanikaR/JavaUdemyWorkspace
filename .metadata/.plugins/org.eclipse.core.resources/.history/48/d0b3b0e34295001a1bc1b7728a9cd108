@@ -1,0 +1,22 @@
+package section4;
+
+public class Methods {
+
+	public static void main(String[] args) {	
+				
+		calculateScore(true, 900, 5, 100);
+		
+		calculateScore(true, 1000, 8, 200);
+		
+	} // ends main
+	
+	public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+				
+		if (gameOver == true) {
+			int finalScore = score + (levelCompleted  * bonus);
+			System.out.println("Final Score: " + finalScore);
+		}
+		
+	}
+
+}
