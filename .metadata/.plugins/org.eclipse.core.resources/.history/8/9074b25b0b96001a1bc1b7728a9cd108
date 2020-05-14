@@ -1,0 +1,30 @@
+package codingexercises;
+
+import java.text.DecimalFormat;
+
+public class DecimalComparator {
+	
+	public static boolean areEqualByThreeDecimalPlaces(double firstNum, double secondNum) {
+
+		firstNum = (firstNum * 1000.000);
+		firstNum = firstNum / 1000.000;
+		Math.floor(firstNum);
+		
+		System.out.println(firstNum);
+		
+		return true;
+}
+	
+	
+	
+	public static void main(String[] args) {
+		
+		System.out.println(areEqualByThreeDecimalPlaces(-3.1756, -3.175)); // true
+		System.out.println(areEqualByThreeDecimalPlaces(3.175, 3.176)); // false
+		System.out.println(areEqualByThreeDecimalPlaces(3.0, 3.0)); // true
+		System.out.println(areEqualByThreeDecimalPlaces(-3.123, 3.1723)); // false
+		
+		
+	}
+
+}

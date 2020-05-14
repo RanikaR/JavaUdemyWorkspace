@@ -1,0 +1,12 @@
+package codingexercises;
+
+public class DecimalComparator {
+	
+	public static boolean areEqualByThreeDecimalPlaces(double firstNum, double secondNum) {
+		firstNum = Math.round(firstNum * 1000d);
+		secondNum = Math.round(secondNum * 1000d);
+		
+		
+	}
+
+}
