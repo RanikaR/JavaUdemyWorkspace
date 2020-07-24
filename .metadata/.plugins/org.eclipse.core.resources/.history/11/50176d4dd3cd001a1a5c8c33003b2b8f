@@ -20,10 +20,23 @@ public class SecondsAndMinutes {
 			return "Invalid value";
 		}
 
-		int hours = minutes / 60;
-		int remainingMin = minutes % 60;
+		String hours = (minutes / 60) + "h";
+		String remainingMin = (minutes % 60) + "m";
+		String secs = secs + "s";
 		
 		String result = (hours + "h " + remainingMin + "m " + seconds + "s");
+		
+		if (hours < 10) {
+			String stringH = "0" + hours;
+		} else if (remainingMin < 10) {
+			String stringM = "0" + remainingMin;
+		} else if (seconds < 10) {
+			String stringS = "0" + seconds;
+		} else {
+			
+			
+		}
+		
 		return result;
 
 		

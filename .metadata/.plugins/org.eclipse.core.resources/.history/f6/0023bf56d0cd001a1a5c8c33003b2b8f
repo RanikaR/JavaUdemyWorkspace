@@ -1,0 +1,21 @@
+package codingexercises;
+
+public class SecondsAndMinutes {
+	
+	public static String getDurationString(int minutes, int seconds) {
+		
+		if ( (minutes < 0) || (seconds < 0 ) || (seconds > 59) ) {
+			return "Invalid value";
+			
+		}
+		
+		int hours = minutes / 60;
+		int remainingMin = minutes % 60;
+		
+		String result = (hours + "h " + remainingMin + "m " + seconds);
+		return result;
+		
+		
+	}
+
+}

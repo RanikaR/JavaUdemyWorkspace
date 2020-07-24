@@ -22,11 +22,9 @@ public class SecondsAndMinutes {
 
 		int hours = minutes / 60;
 		int remainingMin = minutes % 60;
-		
+
 		String result = (hours + "h " + remainingMin + "m " + seconds + "s");
 		return result;
-
-		
 
 	}
 
