@@ -28,6 +28,7 @@ public class OperatorChallenge {
 	double myFirst = 20.00d;
 	double mySecond = 80.00d;
 	
+	// because there's no parentheses, 80 * 100 occurs first
 	double myValuesTotal = myFirst + mySecond * 100;
 	System.out.println("My Value: " + myValuesTotal);
 	

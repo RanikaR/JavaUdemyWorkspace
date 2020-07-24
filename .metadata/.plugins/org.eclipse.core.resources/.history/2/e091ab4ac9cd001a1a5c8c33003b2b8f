@@ -1,0 +1,32 @@
+package section4;
+
+public class MethodOverloadingChallenge {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	public static double calcFeetInchesToCentimeters(int feet, int inches) {
+		if (feet == 0 ) {
+			if (inches >=0 && inches <=12) {
+				double result = (int) (inches * 2.54);
+				System.out.println(inches + " inches is " + result + " centimeters.");
+				return result;
+				
+			} else {
+				System.out.println("Please enter valid numbers.");
+			}
+			
+		} else if (feet >= 0 && inches <=12) {
+			double result = ( (feet * 12) + (inches) ) * 2.54;
+			
+		}
+		
+		
+	}
+	
+	public static int calcFeetInchesToCentimeters(int inches) {
+		
+	}
+
+}

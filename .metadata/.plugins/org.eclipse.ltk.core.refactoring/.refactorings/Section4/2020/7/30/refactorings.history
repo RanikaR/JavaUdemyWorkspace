@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;result&apos; in &apos;section4.MethodOverloadingChallenge.calcFeetInchesToCentimeters(...)&apos; to &apos;centimeters&apos;&#x0D;&#x0A;- Original project: &apos;Section4&apos;&#x0D;&#x0A;- Original element: &apos;section4.MethodOverloadingChallenge.calcFeetInchesToCentimeters(int).result&apos;&#x0D;&#x0A;- Renamed element: &apos;result&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;result&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;section4{MethodOverloadingChallenge.java[MethodOverloadingChallenge~calcFeetInchesToCentimeters~I@result!1591!1608!1598!1603!D!0!false" name="centimeters" references="true" stamp="1595608664382" version="1.0"/>
+</session>
