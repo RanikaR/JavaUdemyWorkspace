@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;AreaCalculator.java&apos; to &apos;Section4/src/codingexercises&apos;&#x0D;&#x0A;- Original project: &apos;Section4&apos;&#x0D;&#x0A;- Destination element: &apos;Section4/src/codingexercises&apos;&#x0D;&#x0A;- Original element: &apos;section4.AreaCalculator.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;codingexercises" element1="/src&lt;section4{AreaCalculator.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1597343448166" units="1" version="1.0"/>
+</session>
