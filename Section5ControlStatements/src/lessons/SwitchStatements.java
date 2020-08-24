@@ -52,8 +52,9 @@ public class SwitchStatements {
 			
 			// With Strings
 			String month = "January";
+			// Case-sensitive. Use .toLowerCase() or .toUpperCase()
 			
-			switch(month) {
+			switch(month) {  
 			case "January":
 				System.out.println("Jan");
 				break;
