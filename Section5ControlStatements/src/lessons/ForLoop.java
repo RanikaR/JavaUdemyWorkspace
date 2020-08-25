@@ -7,7 +7,7 @@ public class ForLoop {
 	public static void main(String[] args) {
 
 		/*
-		 * for(init; termination; increment) { // code block }
+		 * for(init; condition for termination; increment aka iterator, iteration step) { // code block }
 		 * 
 		 * for(int i = 0; i < 5; i++) { // code block }
 		 * 
@@ -62,7 +62,7 @@ public class ForLoop {
 			return false;
 		}
 		
-		for(int i = 2; i <= n/2; i++) {
+		for(int i = 2; i <= n/2; i++) {   // Optimized: for(int i = 2; i <= (long) Math.sqrt(n); i++)
 			if(n % i == 0) {
 				return false;
 			}
