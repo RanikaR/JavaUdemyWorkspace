@@ -2,6 +2,11 @@ package lessons;
 
 // 67. The while and do while statements (+Challenge Exercise)
 
+// Continue - loop will bypass the part of the code block that is below the continue keyword and 
+// move to the next iteration
+
+// Break - exit the loop 
+
 public class WhileAndDoWhile {
 	
 	public static void main(String[] args) {
@@ -93,5 +98,7 @@ public class WhileAndDoWhile {
 		}
 		
 	}
+	
+	
 
 }
