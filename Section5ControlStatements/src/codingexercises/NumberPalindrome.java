@@ -38,28 +38,33 @@ public class NumberPalindrome {
 	public static boolean isPalindrome(int number) {
 		
 		int reversed = 0;
-		int doMath = number;
 		
-		while (Math.abs(doMath) > 0) {
+		// replica of original number to do calculations with and modify
+		int doMath = number;  
+		
+		// use absolute value of number in case number passed is negative
+		while (Math.abs(doMath) > 0) {   
 			
-			int digit = doMath % 10;
+			// get the last digit of the number by getting the remainder (in the ones place)
+			int digit = doMath % 10;	
 			System.out.println("Digit: " + digit);
 			
-			reversed += digit;
+			// add the previous number to reversed
+			reversed += digit;	
 			System.out.println("Reversed: " + reversed);
+			
+			// multiply the reversed number by 10
 			reversed *= 10;
 			
-			
+			// decrement the number passed by dividing 10
 			doMath /= 10;
 			System.out.println("Number at End of Iteration: " + doMath);
 			System.out.println("Reversed at End of Iteration: " + reversed);
 			System.out.println("---");
 			
-			
-			
 		}
 		
-		reversed /= 10;  // gets rid of last digit
+		reversed /= 10;  // gets rid of last digit '0'
 		
 		System.out.println("Reversed: " + reversed + " | " + "Original Number: " + number);
 		
@@ -68,9 +73,5 @@ public class NumberPalindrome {
 		} else {
 			return false;
 		}
-		
-		
-		
-		
 	}
 }
