@@ -24,9 +24,9 @@ public class LastDigitChecker {
 		
 		// number range 10 - 1000 inclusive
 		
-		
 		// without isValid:
 		// if ( x < 10 || x > 1000 || y < 10 || y > 1000 || z < 10 || z > 1000) 
+		
 		if ( !isValid(x) || !isValid(y) || !isValid(z) ) {   
 			return false;
 		} else {
