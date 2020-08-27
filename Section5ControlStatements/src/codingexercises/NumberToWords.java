@@ -1,24 +1,41 @@
 package codingexercises;
 
+// Coding Exercise 23: Number To Words
+
 public class NumberToWords {
 
 	public static void main(String[] args) {
-		
-		System.out.println(reverse(432));
-		numberToWords(432);
-		
-		System.out.println(reverse(100));
+			
+		numberToWords(4321);
+		System.out.println("**********");
 		numberToWords(100);
+		
+//		System.out.println(getDigitCount(432));
+//		System.out.println(getDigitCount(1001));
+//		
+//		numberToWords(0);
 	}
 
 	public static void numberToWords(int number) {
-
+		
+		int digitCount = getDigitCount(number);
+		
 		number = reverse(number);
 		
-		if (number < 1) {
+		int revDigitCount = getDigitCount(number);
+		
+//		System.out.println("Starting Count: " + digitCount);
+//		System.out.println("Reversed Count: " + revDigitCount);
+		
+		if (number < 0) {
 			System.out.println("Invalid Value");
 		}
-
+		
+		if (number == 0) {
+			System.out.println("Zero");
+		}
+		
+				
 		while (number > 0) {
 			int lastDigit = number % 10;
 
@@ -54,29 +71,55 @@ public class NumberToWords {
 				System.out.println("Nine");
 				break;
 			}
-
 			number /= 10;
+//			System.out.println("Digit Count: " + getDigitCount(number));
+		} // ends while loop
+		
+		// gets how many leading zeroes are missing when number is reversed
+		// and prints them
+		int zeroes = digitCount - revDigitCount;  
+		for (int i = 0; i < zeroes; i++) {
+			System.out.println("Zero");
 		}
+		
+		
 
-	} // ends numberToWords
+	} // ends numberToWords()
 	
-	public static int reverse(int numToReverse) {
+	public static int reverse(int number) {
 		
 		int reversed = 0;
 		
-		while (numToReverse > 0) {
+		while (Math.abs(number) > 0) {
 			
-			int lastDigit = numToReverse % 10;
+			int lastDigit = number % 10;
 			reversed = (reversed + lastDigit) * 10;
 			
-			numToReverse /= 10;
+			number /= 10;
 			
 		}
 		
-		return (reversed / 10);
+		return (reversed / 10);		
+	} // ends reverse()
+	
+	public static int getDigitCount(int number) {
 		
+		if (number < 0 ) {
+			return -1;
+		}
 		
+		if (number == 0) {
+			return 1;
+		}
 		
-	}
+		int count = 0;
+		
+		while (number > 0) {
+			count++;
+			number /= 10;
+		}
+		return count;
+		
+	} // ends getDigitCount
 
 }
