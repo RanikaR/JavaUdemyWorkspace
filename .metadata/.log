@@ -1467,3 +1467,15 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-27 17:48:49.997
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xOhoDwBA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-27 17:48:50.066
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.xOhoDwBA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-27 17:48:50.099
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-08-27 17:48:50.122
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xOhoDwBA => OK
