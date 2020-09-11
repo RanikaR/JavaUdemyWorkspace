@@ -27,11 +27,11 @@ public class LargestPrime {
 				
 				// Check if current Factor is Prime
 				if (number % i == 0) {
+					
+					// Make number equal to current iteration and repeat process
 					number = i;
 				}
-				
 			}
-			
 		}
 		return number;
 	}
