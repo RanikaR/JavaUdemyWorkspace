@@ -1,5 +1,7 @@
 package codingexercises;
 
+//Coding Exercise 26: DiagonalStar
+
 public class DiagonalStar {
 
 	public static void main(String[] args) {
